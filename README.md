@@ -21,6 +21,7 @@ that modify its behaviour:
 - spider setting `STATIC_TEXT` - quote text (default _To be, or not to be_)
 - spider setting `STATIC_AUTHOR` - quote author (default _Shakespeare_)
 - environment variable `STATIC_TAGS` - quote tags (default _static_)
+- spider setting `STATIC_SLEEP` - time to sleep in the spider (default _0_)
 
 ## Running locally
 
