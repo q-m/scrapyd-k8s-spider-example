@@ -12,7 +12,15 @@ so that one can get started easily.
 
 ## Scraped site
 
-This spider returns quotes from [quotes.toscrape.com](https://quotes.toscrape.com).
+This project contains two spiders. The `quotes` spider returns quotes from
+[quotes.toscrape.com](https://quotes.toscrape.com).
+
+The `static` spider returns a single dummy quote without accessing the network.
+This can be used for testing. There are several settings and environment variables
+that modify its behaviour:
+- spider setting `STATIC_TEXT` - quote text (default _To be, or not to be_)
+- spider setting `STATIC_AUTHOR` - quote author (default _Shakespeare_)
+- environment variable `STATIC_TAGS` - quote tags (default _static_)
 
 ## Running locally
 
@@ -33,6 +41,7 @@ $ scrapy list
 ```
 > ```
 > quotes
+> static
 > ```
 ```sh
 $ scrapy crawl quotes
@@ -67,6 +76,7 @@ docker run --rm example scrapy list
 ```
 > ```
 > quotes
+> static
 > ```
 
 ```sh
