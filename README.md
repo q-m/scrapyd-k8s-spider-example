@@ -1,7 +1,5 @@
 # Example spider for scrapyd-k8s
 
-_Somewhat a work in progress._
-
 [Scrapyd-k8s](https://github.com/q-m/scrapyd-k8s) is an application for
 deploying and running Scrapy spiders as either Docker instances or Kubernetes
 jobs. Its intention is to be compatible with [scrapyd](https://scrapyd.readthedocs.io/),
@@ -104,7 +102,7 @@ docker run --rm example scrapy crawl quotes
   * `org.scrapy.project` - the project name
   * `org.scrapy.spiders` - the spiders (those returned by `scrapy list`, comma-separated)
 
-Please see the [Github Action](./github/workflows/container.yaml) for an
+Please see the [Github Action](./.github/workflows/container.yml) for an
 example of how to build such a container. In short, first build the container,
 then run the container to obtain the list of spiders, then add labels to the
 container so it can work with scrapyd-k8s.
